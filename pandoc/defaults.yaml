@@ -1,0 +1,19 @@
+pdf-engine: xelatex
+from: markdown-markdown_in_html_blocks-auto_identifiers
+filters:
+  - include-files.lua
+  - lua-filter.lua
+  - parse-html.lua
+  - highlight.lua
+template: eisvogel
+top-level-division: section
+toc: true
+toc-depth: 1
+include-in-header:
+  - silence-warnings.tex
+  - more-headings.tex
+  - no-listings-code.tex
+  - link-color.tex
+  - center-captions.tex
+  - set-label-items.tex
+  - highlight.tex
